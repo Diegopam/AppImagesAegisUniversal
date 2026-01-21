@@ -1,0 +1,53 @@
+name: Validate App Store JSON
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install validator dependencies
+        run: |
+          npm init -y
+          npm install ajv ajv-formats
+
+      - name: Validate apps.json against schema
+        run: |
+          node <<'EOF'
+          const fs = require("fs");
+          const Ajv = require("ajv");
+          const addFormats = require("ajv-formats");
+
+          const ajv = new Ajv({ allErrors: true });
+          addFormats(ajv);
+
+          const schema = JSON.parse(
+            fs.readFileSync("schema/app-store.schema.json", "utf8")
+          );
+
+          const data = JSON.parse(
+            fs.readFileSync("apps.json", "utf8")
+          );
+
+          const validate = ajv.compile(schema);
+          const valid = validate(data);
+
+          if (!valid) {
+            console.error("❌ JSON inválido:");
+            console.error(validate.errors);
+            process.exit(1);
+          }
+
+          console.log("✅ JSON válido! Tudo certo.");
+          EOF
