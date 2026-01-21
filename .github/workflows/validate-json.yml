@@ -1,11 +1,17 @@
-name: Validate App Store JSON
+name: Validate and Auto-Merge App Store JSON
 
 on:
   pull_request:
     branches: [ "main" ]
+    paths:
+      - 'apps.json'
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
-  validate:
+  validate-and-merge:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +29,7 @@ jobs:
           npm install ajv ajv-formats
 
       - name: Validate apps.json against schema
+        id: validate
         run: |
           node <<'EOF'
           const fs = require("fs");
@@ -45,9 +52,47 @@ jobs:
 
           if (!valid) {
             console.error("❌ JSON inválido:");
-            console.error(validate.errors);
+            console.error(JSON.stringify(validate.errors, null, 2));
             process.exit(1);
           }
 
           console.log("✅ JSON válido! Tudo certo.");
+          console.log(`📦 Total de apps: ${data.apps.length}`);
           EOF
+
+      - name: Auto-approve PR
+        if: success()
+        uses: hmarr/auto-approve-action@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-merge PR
+        if: success()
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --auto --squash --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Comment on PR (Success)
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ **Validação aprovada!** O JSON está correto e será mergeado automaticamente.\n\n🎉 Obrigado por contribuir com a AppImage Store!'
+            })
+
+      - name: Comment on PR (Failure)
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '❌ **Validação falhou!** O JSON contém erros.\n\nPor favor, verifique se seu app segue o schema corretamente.'
+            })
