@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AppImage Community Store Schema",
+  "type": "object",
+  "required": ["store", "apps"],
+
+  "properties": {
+    "store": {
+      "type": "object",
+      "required": ["name", "schema_version"],
+      "properties": {
+        "name": { "type": "string" },
+        "schema_version": { "type": "string" },
+        "last_update": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+
+    "apps": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/app" }
+    }
+  },
+
+  "$defs": {
+    "app": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "summary",
+        "category",
+        "framework",
+        "license",
+        "icons",
+        "appimage"
+      ],
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Identificador único do app"
+        },
+
+        "name": { "type": "string" },
+
+        "summary": {
+          "type": "string",
+          "maxLength": 120
+        },
+
+        "description": { "type": "string" },
+
+        "category": {
+          "type": "string",
+          "enum": [
+            "development",
+            "games",
+            "multimedia",
+            "internet",
+            "system",
+            "utilities",
+            "education",
+            "graphics",
+            "office"
+          ]
+        },
+
+        "framework": {
+          "type": "string",
+          "enum": [
+            "aegis-framework",
+            "universal-framework",
+            "appimage-generic"
+          ]
+        },
+
+        "license": { "type": "string" },
+
+        "homepage": {
+          "type": "string",
+          "format": "uri"
+        },
+
+        "author": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "github": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+
+        "icons": {
+          "type": "object",
+          "minProperties": 1,
+          "properties": {
+            "png": {
+              "type": "string",
+              "format": "uri"
+            },
+            "svg": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "additionalProperties": false
+        },
+
+        "screenshots": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+
+        "appimage": {
+          "type": "object",
+          "required": ["version", "architecture", "download_url"],
+          "properties": {
+            "version": {
+              "type": "string",
+              "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+            },
+            "architecture": {
+              "type": "string",
+              "enum": ["x86_64", "aarch64"]
+            },
+            "download_url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-fA-F0-9]{64}$"
+            }
+          }
+        }
+      },
+
+      "additionalProperties": false
+    }
+  }
+}
