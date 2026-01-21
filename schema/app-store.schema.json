@@ -1,30 +1,39 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "AppImage Community Store Schema",
   "type": "object",
-  "required": ["store", "apps"],
-
+  "required": [
+    "store",
+    "apps"
+  ],
   "properties": {
     "store": {
       "type": "object",
-      "required": ["name", "schema_version"],
+      "required": [
+        "name",
+        "schema_version"
+      ],
       "properties": {
-        "name": { "type": "string" },
-        "schema_version": { "type": "string" },
+        "name": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
         "last_update": {
           "type": "string",
           "format": "date"
         }
       }
     },
-
     "apps": {
       "type": "array",
-      "items": { "$ref": "#/$defs/app" }
+      "items": {
+        "$ref": "#/definitions/app"
+      }
     }
   },
-
-  "$defs": {
+  "definitions": {
     "app": {
       "type": "object",
       "required": [
@@ -37,23 +46,22 @@
         "icons",
         "appimage"
       ],
-
       "properties": {
         "id": {
           "type": "string",
           "pattern": "^[a-z0-9-]+$",
           "description": "Identificador único do app"
         },
-
-        "name": { "type": "string" },
-
+        "name": {
+          "type": "string"
+        },
         "summary": {
           "type": "string",
           "maxLength": 120
         },
-
-        "description": { "type": "string" },
-
+        "description": {
+          "type": "string"
+        },
         "category": {
           "type": "string",
           "enum": [
@@ -68,7 +76,6 @@
             "office"
           ]
         },
-
         "framework": {
           "type": "string",
           "enum": [
@@ -77,25 +84,25 @@
             "appimage-generic"
           ]
         },
-
-        "license": { "type": "string" },
-
+        "license": {
+          "type": "string"
+        },
         "homepage": {
           "type": "string",
           "format": "uri"
         },
-
         "author": {
           "type": "object",
           "properties": {
-            "name": { "type": "string" },
+            "name": {
+              "type": "string"
+            },
             "github": {
               "type": "string",
               "format": "uri"
             }
           }
         },
-
         "icons": {
           "type": "object",
           "minProperties": 1,
@@ -111,7 +118,6 @@
           },
           "additionalProperties": false
         },
-
         "screenshots": {
           "type": "array",
           "items": {
@@ -119,15 +125,19 @@
             "format": "uri"
           }
         },
-
         "tags": {
           "type": "array",
-          "items": { "type": "string" }
+          "items": {
+            "type": "string"
+          }
         },
-
         "appimage": {
           "type": "object",
-          "required": ["version", "architecture", "download_url"],
+          "required": [
+            "version",
+            "architecture",
+            "download_url"
+          ],
           "properties": {
             "version": {
               "type": "string",
@@ -135,7 +145,10 @@
             },
             "architecture": {
               "type": "string",
-              "enum": ["x86_64", "aarch64"]
+              "enum": [
+                "x86_64",
+                "aarch64"
+              ]
             },
             "download_url": {
               "type": "string",
@@ -148,7 +161,6 @@
           }
         }
       },
-
       "additionalProperties": false
     }
   }
