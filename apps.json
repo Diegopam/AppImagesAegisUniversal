@@ -1,8 +1,30 @@
 {
-    "store": {
-        "name": "AppImages Aegis Universal",
-        "schema_version": "1.0",
-        "last_update": "2026-01-21"
-    },
-    "apps": []
+  "store": {
+    "name": "AppImages Aegis Universal",
+    "schema_version": "1.0",
+    "last_update": "2026-01-21"
+  },
+  "apps": [
+    {
+      "id": "universal-github",
+      "name": "Universal GitHub",
+      "summary": "gerencie seus repositorios do github",
+      "description": "quer gerenciar seu github de forma facil e com aaprencia limpa? crie um token-classic do github e use nosso appimage! facil e simples!",
+      "category": "development",
+      "framework": "universal-framework",
+      "license": "MIT",
+      "author": {
+        "name": "Diegopam",
+        "github": "https://github.com/Diegopam"
+      },
+      "icons": {
+        "png": "https://github.com/Diegopam/AppImageSup/releases/download/universal-github1/icon.png"
+      },
+      "appimage": {
+        "version": "1.0.0",
+        "architecture": "x86_64",
+        "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/universal-github1/universal-Github-x86_64.AppImage"
+      }
+    }
+  ]
 }
