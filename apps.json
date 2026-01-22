@@ -2,7 +2,7 @@
   "store": {
     "name": "AppImages Aegis Universal",
     "schema_version": "1.0",
-    "last_update": "2026-01-21"
+    "last_update": "2026-01-22"
   },
   "apps": [
     {
@@ -24,6 +24,27 @@
         "version": "1.0.0",
         "architecture": "x86_64",
         "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/universal-github1/universal-Github-x86_64.AppImage"
+      }
+    },
+    {
+      "id": "web-builder",
+      "name": "WebBuilder",
+      "summary": "Desenvolvedor de Interfaces Web",
+      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueça o padrao antigo de codagem venha conhecer o WebBuilder",
+      "category": "development",
+      "framework": "aegis-framework",
+      "license": "MIT",
+      "author": {
+        "name": "Diegopam",
+        "github": "https://github.com/Diegopam"
+      },
+      "icons": {
+        "png": "https://github.com/Diegopam/AppImageSup/releases/download/webbuilder-v1/icon.png"
+      },
+      "appimage": {
+        "version": "1.0.0",
+        "architecture": "x86_64",
+        "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/webbuilder-v1/webbuilder-x86_64.AppImage"
       }
     }
   ]
