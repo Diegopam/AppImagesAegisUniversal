@@ -60,16 +60,11 @@ jobs:
           console.log(`📦 Total de apps: ${data.apps.length}`);
           EOF
 
-      - name: Auto-approve PR
-        if: success()
-        uses: hmarr/auto-approve-action@v4
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Auto-merge PR
+      - name: Merge PR (if validation passed)
         if: success()
         run: |
-          gh pr merge ${{ github.event.pull_request.number }} --auto --squash --delete-branch
+          # Merge direto após validação bem-sucedida
+          gh pr merge ${{ github.event.pull_request.number }} --squash --delete-branch || echo "Merge pode precisar de configuração nas branch protection rules"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
