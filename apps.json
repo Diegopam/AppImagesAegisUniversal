@@ -30,7 +30,7 @@
       "id": "web-builder",
       "name": "WebBuilder",
       "summary": "Desenvolvedor de Interfaces Web",
-      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueça o padrao antigo de codagem venha conhecer o WebBuilder",
+      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃ§a o padrao antigo de codagem venha conhecer o WebBuilder",
       "category": "development",
       "framework": "aegis-framework",
       "license": "MIT",
@@ -45,6 +45,27 @@
         "version": "1.0.0",
         "architecture": "x86_64",
         "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/webbuilder-v1/webbuilder-x86_64.AppImage"
+      }
+    },
+    {
+      "id": "appiamge-store",
+      "name": "AppImage-Store",
+      "summary": "Loja Oficial OpenSorce para appimages",
+      "description": "Encontre seus AppImages dentro da loja! não achou? ok você pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
+      "category": "utilities",
+      "framework": "universal-framework",
+      "license": "MIT, OpenSorce",
+      "author": {
+        "name": "Diegopam",
+        "github": "https://github.com/Diegopam"
+      },
+      "icons": {
+        "png": "https://github.com/Diegopam/AppImageSup/releases/download/FINAL-VERSION/icon.png"
+      },
+      "appimage": {
+        "version": "1.0.5",
+        "architecture": "x86_64",
+        "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/FINAL-VERSION/UniversalApp-x86_64.AppImage"
       }
     }
   ]
