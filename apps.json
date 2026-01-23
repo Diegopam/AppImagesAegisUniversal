@@ -2,7 +2,7 @@
   "store": {
     "name": "AppImages Aegis Universal",
     "schema_version": "1.0",
-    "last_update": "2026-01-22"
+    "last_update": "2026-01-23"
   },
   "apps": [
     {
@@ -30,7 +30,7 @@
       "id": "web-builder",
       "name": "WebBuilder",
       "summary": "Desenvolvedor de Interfaces Web",
-      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃÂ§a o padrao antigo de codagem venha conhecer o WebBuilder",
+      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃÂÃÂ§a o padrao antigo de codagem venha conhecer o WebBuilder",
       "category": "development",
       "framework": "aegis-framework",
       "license": "MIT",
@@ -51,7 +51,7 @@
       "id": "appiamge-store",
       "name": "AppImage-Store",
       "summary": "Loja Oficial OpenSorce para appimages",
-      "description": "Encontre seus AppImages dentro da loja! nÃ£o achou? ok vocÃª pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
+      "description": "Encontre seus AppImages dentro da loja! nÃÂ£o achou? ok vocÃÂª pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
       "category": "utilities",
       "framework": "universal-framework",
       "license": "MIT, OpenSorce",
@@ -87,6 +87,29 @@
         "version": "144.0.7",
         "architecture": "x86_64",
         "download_url": "https://github.com/ivan-hc/Chrome-appimage/releases/download/continuous/Google-Chrome-stable-144.0.7559.96-1-x86_64.AppImage"
+      }
+    },
+    {
+      "id": "obsidian-stable",
+      "name": "Obsidian",
+      "summary": "O Obsidian é um poderoso aplicativo de notas.",
+      "description": "O\nObsidian é um aplicativo de notas e gerenciamento de conhecimento pessoal que funciona com arquivos locais no formato Markdown.",
+      "category": "office",
+      "framework": "appimage-generic",
+      "license": "proprietary",
+      "homepage": "https://obsidian.md/",
+      "author": {
+        "name": "Inacio",
+        "github": "https://github.com/InacioPS"
+      },
+      "icons": {
+        "png": "https://forum.obsidian.md/uploads/default/original/3X/9/f/9f1b5b46aed533f5386cf276ab2cdce48cbd2e25.png"
+      },
+      "appimage": {
+        "version": "1.11.5",
+        "architecture": "x86_64",
+        "download_url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.11.5/Obsidian-1.11.5.AppImage",
+        "sha256": "d09ce116991f525658983c1cfd468f60ee8e3269d0b91dddd81e51216103f2c6"
       }
     }
   ]
