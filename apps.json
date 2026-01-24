@@ -2,7 +2,7 @@
   "store": {
     "name": "AppImages Aegis Universal",
     "schema_version": "1.0",
-    "last_update": "2026-01-23"
+    "last_update": "2026-01-24"
   },
   "apps": [
     {
@@ -30,7 +30,7 @@
       "id": "web-builder",
       "name": "WebBuilder",
       "summary": "Desenvolvedor de Interfaces Web",
-      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃÂÃÂ§a o padrao antigo de codagem venha conhecer o WebBuilder",
+      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃÂÃÂÃÂÃÂ§a o padrao antigo de codagem venha conhecer o WebBuilder",
       "category": "development",
       "framework": "aegis-framework",
       "license": "MIT",
@@ -51,7 +51,7 @@
       "id": "appiamge-store",
       "name": "AppImage-Store",
       "summary": "Loja Oficial OpenSorce para appimages",
-      "description": "Encontre seus AppImages dentro da loja! nÃÂ£o achou? ok vocÃÂª pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
+      "description": "Encontre seus AppImages dentro da loja! nÃÂÃÂ£o achou? ok vocÃÂÃÂª pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
       "category": "utilities",
       "framework": "universal-framework",
       "license": "MIT, OpenSorce",
@@ -92,8 +92,8 @@
     {
       "id": "obsidian-stable",
       "name": "Obsidian",
-      "summary": "O Obsidian é um poderoso aplicativo de notas.",
-      "description": "O\nObsidian é um aplicativo de notas e gerenciamento de conhecimento pessoal que funciona com arquivos locais no formato Markdown.",
+      "summary": "O Obsidian Ã© um poderoso aplicativo de notas.",
+      "description": "O\nObsidian Ã© um aplicativo de notas e gerenciamento de conhecimento pessoal que funciona com arquivos locais no formato Markdown.",
       "category": "office",
       "framework": "appimage-generic",
       "license": "proprietary",
@@ -110,6 +110,27 @@
         "architecture": "x86_64",
         "download_url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.11.5/Obsidian-1.11.5.AppImage",
         "sha256": "d09ce116991f525658983c1cfd468f60ee8e3269d0b91dddd81e51216103f2c6"
+      }
+    },
+    {
+      "id": "uni-pamac-corps",
+      "name": "uni-pamac",
+      "summary": "Ferramenta dedicada ao pamac e pacman",
+      "description": "Voce gosta de usar o pamac ou pacman em seu arch-linux? entao essa ferramenta grafica e pra voce que curti coisa simples, mas porem direta! experimente e vera um gerenciador de pacotes super limpo e simples!",
+      "category": "utilities",
+      "framework": "universal-framework",
+      "license": "OpenSource",
+      "author": {
+        "name": "Diegopam",
+        "github": "https://github.com/Diegopam"
+      },
+      "icons": {
+        "png": "https://github.com/Diegopam/AppImageSup/releases/download/uni-pamac/icon.png"
+      },
+      "appimage": {
+        "version": "1.1.1",
+        "architecture": "x86_64",
+        "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/uni-pamac/uni-pamac-x86_64.AppImage"
       }
     }
   ]
