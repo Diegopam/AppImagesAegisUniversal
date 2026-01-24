@@ -30,7 +30,7 @@
       "id": "web-builder",
       "name": "WebBuilder",
       "summary": "Desenvolvedor de Interfaces Web",
-      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃÂÃÂÃÂÃÂ§a o padrao antigo de codagem venha conhecer o WebBuilder",
+      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ§a o padrao antigo de codagem venha conhecer o WebBuilder",
       "category": "development",
       "framework": "aegis-framework",
       "license": "MIT",
@@ -51,7 +51,7 @@
       "id": "appiamge-store",
       "name": "AppImage-Store",
       "summary": "Loja Oficial OpenSorce para appimages",
-      "description": "Encontre seus AppImages dentro da loja! nÃÂÃÂ£o achou? ok vocÃÂÃÂª pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
+      "description": "Encontre seus AppImages dentro da loja! nÃÂÃÂÃÂÃÂ£o achou? ok vocÃÂÃÂÃÂÃÂª pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
       "category": "utilities",
       "framework": "universal-framework",
       "license": "MIT, OpenSorce",
@@ -92,8 +92,8 @@
     {
       "id": "obsidian-stable",
       "name": "Obsidian",
-      "summary": "O Obsidian Ã© um poderoso aplicativo de notas.",
-      "description": "O\nObsidian Ã© um aplicativo de notas e gerenciamento de conhecimento pessoal que funciona com arquivos locais no formato Markdown.",
+      "summary": "O Obsidian ÃÂ© um poderoso aplicativo de notas.",
+      "description": "O\nObsidian ÃÂ© um aplicativo de notas e gerenciamento de conhecimento pessoal que funciona com arquivos locais no formato Markdown.",
       "category": "office",
       "framework": "appimage-generic",
       "license": "proprietary",
@@ -131,6 +131,27 @@
         "version": "1.1.1",
         "architecture": "x86_64",
         "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/uni-pamac/uni-pamac-x86_64.AppImage"
+      }
+    },
+    {
+      "id": "pp-ss-pp",
+      "name": "ppsspp",
+      "summary": "Emulador de PlayStation Portatil",
+      "description": "Jogue seus jogos de psp com o melhor emulador de todos os tempos o PPSSPP é a melhor ferramenta pros seus jogos psp!",
+      "category": "games",
+      "framework": "appimage-generic",
+      "license": "OpenSource",
+      "author": {
+        "name": "Diegopam",
+        "github": "https://github.com/Diegopam"
+      },
+      "icons": {
+        "png": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/PPSSPP_logo.svg/960px-PPSSPP_logo.svg.png"
+      },
+      "appimage": {
+        "version": "1.18.1",
+        "architecture": "x86_64",
+        "download_url": "https://github.com/pkgforge-dev/PPSSPP-AppImage/releases/download/1.18.1-5/ppsspp-1.18.1-5-anylinux-x86_64.AppImage"
       }
     }
   ]
