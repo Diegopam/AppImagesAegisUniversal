@@ -2,7 +2,7 @@
   "store": {
     "name": "AppImages Aegis Universal",
     "schema_version": "1.0",
-    "last_update": "2026-02-07"
+    "last_update": "2026-03-07"
   },
   "apps": [
     {
@@ -30,7 +30,7 @@
       "id": "web-builder",
       "name": "WebBuilder",
       "summary": "Desenvolvedor de Interfaces Web",
-      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ§a o padrao antigo de codagem venha conhecer o WebBuilder",
+      "description": "Desenvolva aplicativos ou interfaces web de forma mais didatica e fluida! esqueÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ§a o padrao antigo de codagem venha conhecer o WebBuilder",
       "category": "development",
       "framework": "aegis-framework",
       "license": "MIT",
@@ -51,7 +51,7 @@
       "id": "appiamge-store",
       "name": "AppImage-Store",
       "summary": "Loja Oficial OpenSorce para appimages",
-      "description": "Encontre seus AppImages dentro da loja! nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£o achou? ok vocÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂª pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
+      "description": "Encontre seus AppImages dentro da loja! nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ£o achou? ok vocÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂª pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
       "category": "utilities",
       "framework": "universal-framework",
       "license": "MIT, OpenSorce",
@@ -92,8 +92,8 @@
     {
       "id": "obsidian-stable",
       "name": "Obsidian",
-      "summary": "O Obsidian ÃÂÃÂ© um poderoso aplicativo de notas.",
-      "description": "O\nObsidian ÃÂÃÂ© um aplicativo de notas e gerenciamento de conhecimento pessoal que funciona com arquivos locais no formato Markdown.",
+      "summary": "O Obsidian ÃÂÃÂÃÂÃÂ© um poderoso aplicativo de notas.",
+      "description": "O\nObsidian ÃÂÃÂÃÂÃÂ© um aplicativo de notas e gerenciamento de conhecimento pessoal que funciona com arquivos locais no formato Markdown.",
       "category": "office",
       "framework": "appimage-generic",
       "license": "proprietary",
@@ -137,7 +137,7 @@
       "id": "pp-ss-pp",
       "name": "ppsspp",
       "summary": "Emulador de PlayStation Portatil",
-      "description": "Jogue seus jogos de psp com o melhor emulador de todos os tempos o PPSSPP Ã© a melhor ferramenta pros seus jogos psp!",
+      "description": "Jogue seus jogos de psp com o melhor emulador de todos os tempos o PPSSPP ÃÂ© a melhor ferramenta pros seus jogos psp!",
       "category": "games",
       "framework": "appimage-generic",
       "license": "OpenSource",
@@ -157,8 +157,8 @@
     {
       "id": "uni-notes-di",
       "name": "Uni-Notes",
-      "summary": "anotações com MD salvos via github",
-      "description": "quer criar markindown iguais do obsidian mas de forma simples e poder sincronizar com seu github pra recuperar de qualquer lugar? entao esse app e perfeito pra você!",
+      "summary": "anotaÃ§Ãµes com MD salvos via github",
+      "description": "quer criar markindown iguais do obsidian mas de forma simples e poder sincronizar com seu github pra recuperar de qualquer lugar? entao esse app e perfeito pra vocÃª!",
       "category": "office",
       "framework": "universal-framework",
       "license": "OpenSource",
@@ -173,6 +173,27 @@
         "version": "1.1.5",
         "architecture": "x86_64",
         "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/uni-notes/uni-notes-x86_64.AppImage"
+      }
+    },
+    {
+      "id": "pobre-flix-player",
+      "name": "PobreFlix PLayer",
+      "summary": "um app para filmes e series baseado no site do pobreflix",
+      "description": "um metodo de assistir seus filmes e series organizadas no linux e direto, teste voce ira gostar!",
+      "category": "multimedia",
+      "framework": "appimage-generic",
+      "license": "MIT",
+      "author": {
+        "name": "Diegopam",
+        "github": "https://github.com/Diegopam"
+      },
+      "icons": {
+        "png": "https://github.com/Diegopam/AppImagesAegisUniversal/releases/download/1.0.1/icon.png"
+      },
+      "appimage": {
+        "version": "1.0.1",
+        "architecture": "x86_64",
+        "download_url": "https://github.com/Diegopam/AppImagesAegisUniversal/releases/download/1.0.1/PobreflixPlayer-x86_64.AppImage"
       }
     }
   ]
