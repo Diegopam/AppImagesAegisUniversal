@@ -51,6 +51,7 @@
       "id": "appiamge-store",
       "name": "AppImage-Store",
       "summary": "Loja Oficial OpenSorce para appimages",
+
       "description": "Encontre seus AppImages dentro da loja! nao achou? ok voce pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
       "category": "utilities",
       "framework": "universal-framework",
