@@ -63,9 +63,9 @@
         "png": "https://github.com/Diegopam/AppImageSup/releases/download/FINAL-VERSION/icon.png"
       },
       "appimage": {
-        "version": "1.0.5",
+        "version": "1.0.6",
         "architecture": "x86_64",
-        "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/FINAL-VERSION/UniversalApp-x86_64.AppImage"
+        "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/AppImage-Store-FinalStable/AppImage-Store-final-x86_64.AppImage"
       }
     },
     {
