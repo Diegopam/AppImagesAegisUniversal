@@ -21,7 +21,7 @@
         "png": "https://github.com/Diegopam/AppImageSup/releases/download/universal-github1/icon.png"
       },
       "appimage": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "architecture": "x86_64",
         "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/universal-github1/universal-Github-x86_64.AppImage"
       }
