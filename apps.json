@@ -2,7 +2,7 @@
   "store": {
     "name": "AppImages Aegis Universal",
     "schema_version": "1.0",
-    "last_update": "2026-03-15"
+    "last_update": "2026-03-18"
   },
   "apps": [
     {
@@ -51,7 +51,6 @@
       "id": "appiamge-store",
       "name": "AppImage-Store",
       "summary": "Loja Oficial OpenSorce para appimages",
-
       "description": "Encontre seus AppImages dentro da loja! nao achou? ok voce pode logar com um token-classic aqui na loja e postar um appimage que deseja ver em nosso repositorio! vamos ajudar o mundo dos AppImages crescer!",
       "category": "utilities",
       "framework": "universal-framework",
@@ -64,9 +63,9 @@
         "png": "https://github.com/Diegopam/AppImageSup/releases/download/FINAL-VERSION/icon.png"
       },
       "appimage": {
-        "version": "1.0.6",
+        "version": "1.0.7",
         "architecture": "x86_64",
-        "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/AppImage-Store-FinalStable/AppImage-Store-final-x86_64.AppImage"
+        "download_url": "https://github.com/Diegopam/AppImageSup/releases/download/appimage-store-fixe-update/AppImage-Store-AutoUpdate.AppImage"
       }
     },
     {
